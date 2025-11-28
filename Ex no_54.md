@@ -1,39 +1,41 @@
 
-
-# EX 54 D program to print all the letters of the English alphabet.
+# EX 55 C program to find a square of number using function with arguments without return type.
 ## AIM:
-To write a C program to print all the letters of the English alphabet.
+To write a C program to find a square of number using function with arguments without return type.
 
 ## Algorithm
 
 1. **Start**  
-2. Initialize a character variable `ch` with `'A'`.  
-3. Loop from `'A'` to `'Z'`:  
-   - Print the character.  
-   - Print a space after each character.  
-4. End the loop once `'Z'` is printed.  
+2. Define a function `findSquare(num)` that takes an integer argument.  
+3. Inside the function, compute `num * num` and display the result.  
+4. In the `main()` function:  
+   - Accept an integer input from the user.  
+   - Call `findSquare(number)` with the input value.  
 5. **End**  
 
- 
 
 ## Program:
 ```
 #include <stdio.h>
 
+void findSquare(int num) {
+    printf("Square of %d is: %d\n", num, num * num);
+}
+
 int main() {
-    char ch;
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
     
-    for (ch = 'A'; ch <= 'Z'; ch++) {
-        printf("%c ", ch);
-    }
+    findSquare(number);
     
     return 0;
 }
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/417382e7-5233-4f85-af71-e0b854b57f79)
 
-![image](https://github.com/user-attachments/assets/19dc5de0-1868-49eb-ae01-387170e6b6bc)
 
 
 ## Result:
